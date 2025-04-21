@@ -42,8 +42,8 @@ docker-compose up --build
 
 ### 3. Миграции и суперпользователь
 ```bash
-docker exec -it web-clinic-web-1 python manage.py migrate
-docker exec -it web-clinic-web-1 python manage.py createsuperuser
+docker exec -it web-clinic-web-1 python clinic/manage.py migrate
+docker exec -it web-clinic-web-1 python clinic/manage.py createsuperuser
 ```
 Введите:
 - Имя пользователя
