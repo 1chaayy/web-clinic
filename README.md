@@ -26,6 +26,26 @@
 
 ---
 
+## 📮 Postman коллекция
+
+Файл коллекции: postman_collection.json
+Импортируйте его в Postman, чтобы получить готовые запросы:
+- GET /doctors
+- GET /appointments
+- GET /appointments/by_patient/?patient_id=...
+- POST /appointments\
+- GET /patients
+  
+Формат POST-запроса:
+```bash
+{
+  "doctor_id": 1,
+  "patient_id": "1",
+  "date": "2025-04-21",
+  "time": "9:00:00"
+}
+```
+
 ## 🔧 Установка и запуск
 
 ### 1. Клонировать проект
