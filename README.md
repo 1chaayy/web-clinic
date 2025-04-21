@@ -32,7 +32,7 @@
 
 ```bash
 git clone https://github.com/yourname/yourrepo.git
-cd yourrepo
+cd web-clinic
 ```
 
 ### 2. 🐳 Docker
