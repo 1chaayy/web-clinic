@@ -31,7 +31,7 @@
 ### 1. Клонировать проект
 
 ```bash
-git clone https://github.com/yourname/yourrepo.git
+git clone https://github.com/1chaayy/web-clinic.git
 cd web-clinic
 ```
 
