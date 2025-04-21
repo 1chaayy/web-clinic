@@ -45,7 +45,10 @@ docker-compose up --build
 docker exec -it web-clinic-web-1 python manage.py migrate
 docker exec -it web-clinic-web-1 python manage.py createsuperuser
 ```
-
+Введите:
+- Имя пользователя
+- Email (по желанию)
+- Пароль
 
 
 ## 🔑 Логин администратора
