@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "a75625df-3481-40ce-b7c4-ba0645987d30",
+		"name": "Clinic API",
+		"description": "**🩺 Clinic API**\n\n**Доступные эндпоинты:**\n\n- `GET /doctors` — получить список врачей\n    \n- `GET /appointments` — получить список всех записей\n    \n- `GET /appointments/?patient_id=` — получить список записей пациента\n    \n- `POST /appointments` — создать новую запись\n    \n- `GET /patients` — получить всех пациентов",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34849452"
+	},
+	"item": [
+		{
+			"name": "Получить список врачей",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/doctors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получить список записей",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получить список записей пациентов",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/appointments/by_patient/?patient_id=<id>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointments",
+						"by_patient",
+						""
+					],
+					"query": [
+						{
+							"key": "patient_id",
+							"value": "<id>"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Записаться на прием",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"doctor_id\": \"doctor_id\",\r\n    \"patient_id\": \"patient_id\",\r\n    \"date\": \"date (гггг-мм-чч)\", \r\n    \"time\": \"(00:00:00)\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/appointments/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получить список пациентов",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
