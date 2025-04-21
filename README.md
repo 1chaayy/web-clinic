@@ -40,9 +40,8 @@ cd web-clinic
 docker-compose up --build
 ```
 
-### 3. Миграции и суперпользователь
+### 3. Создаем суперпользователя
 ```bash
-docker exec -it web-clinic-web-1 python clinic/manage.py migrate
 docker exec -it web-clinic-web-1 python clinic/manage.py createsuperuser
 ```
 Введите:
